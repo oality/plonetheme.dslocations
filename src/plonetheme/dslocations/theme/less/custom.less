@@ -14,34 +14,38 @@
 .plone-navbar {
   background-color: #fafafa;
   margin-bottom: 0;
-  border-bottom: 3px solid #fff557;
+  border-bottom: 3px solid #eac02b;
 }
 
 .plone-breadcrumb {
-  // background-color: #fff557;
+  // background-color: #eac02b;
   background-color: #fafafa;
-  border-top: 1px solid #fff557;
-  border-bottom: 1px solid #fff557;
+  border-top: 1px solid #eac02b;
+  border-bottom: 1px solid #eac02b;
 }
 
 .plone-navbar-nav > .selected > a,
 .plone-navbar-nav > .selected > a:focus,
 .plone-navbar-nav > .selected > a:hover {
-  color: #4d4d4d;
-  border-top: 3px solid #fff557;
-  background-color: #fafafa;
+  border-top: 3px solid #eac02b;
+  background-color: #eac02b;
 }
 
-.plone-navbar-nav > li > a,
-.plone-navbar-nav > li > a:focus {
+.plone-navbar-nav > li > a {
   border-top: 3px solid white;
   color: #4d4d4d;
   background-color: #fafafa;
 }
 
+.plone-navbar-nav > li > a:focus {
+  border-top: 3px solid white;
+  background-color: #fafafa;
+}
+
 .plone-navbar-nav > li > a:hover {
-  border-top: 3px solid #fff557;
-  background-color: #fff557;
+  border-top: 3px solid #eac02b;
+  background-color: #eac02b;
+  color: #ffffff;
 }
 
 #portal-logo {
@@ -69,11 +73,19 @@
 
 #portal-footer-wrapper {
   padding: 5px;
-  background-color: #fafafa;
-  border-top: 1px solid #fff557;
-  color: #4d4d4d;
+  background-color: #eac02b;
+  border-top: 1px solid #eac02b;
+  color: #ffffff;
   text-align: center;
   clear: both;
+}
+
+#portal-footer-wrapper a {
+  color: #ffffff;
+}
+
+#portal-footer-wrapper a:hover {
+  color: #4d4d4d;
 }
 
 #portal-footer-wrapper .portletWrapper:first-child {
@@ -83,8 +95,24 @@
   margin-bottom: 0;
 }
 
-#portal-footer-wrapper a {
+.plone-breadcrumb ol a {
   color: #4d4d4d;
+}
+
+.plone-breadcrumb ol a:hover {
+  color: #ffffff;
+  background-color: #eac02b;
+  text-decoration: none;
+}
+
+a {
+  color: #4d4d4d;
+}
+
+a:hover {
+  color: #ffffff;
+  background-color: #eac02b;
+  text-decoration: none;
 }
 /* TinyMCE templates */
 // image-grid-2x2:
@@ -107,12 +135,12 @@
   }
 }
 
-button[name="collective.disclaimer.ok"] {
+.disclaimer-inner button[name="collective.disclaimer.ok"] {
   background: #b1b1b1;
 }
 
 .documentFirstHeading {
-  border-bottom: 1px solid #fff557;
+  border-bottom: 1px solid #eac02b;
 }
 
 .widget-logo.default-small-logo {
@@ -144,4 +172,32 @@ div.weather-title {
 
 .section-front-page #content div.dslocations-homepage p img {
   padding: 10px;
+}
+
+#top-area,
+.informations {
+  background: #eac02b;
+  min-height: 5em;
+  color: #ffffff;
+  margin-top: 5em;
+}
+.figures {
+    padding-top: 1em;
+}
+#priceandrequest {
+    padding: 1em;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+}
+#priceandrequest button {
+  color: #fff;
+  background-color: #dd693c;
+  border-color: #b2b2b2;
+  padding: 12px 24px;
+}
+
+
+.dslocations-homepage {
+  min-height: 28em;
 }
