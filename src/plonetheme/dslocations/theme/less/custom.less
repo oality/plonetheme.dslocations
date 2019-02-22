@@ -69,6 +69,18 @@
 #portal-anontools {
   position: relative;
   z-index: 1;
+  float: left;
+}
+@media (min-width: 576px) {
+  #portal-anontools {
+    position: relative;
+    z-index: 1;
+    float: right;
+  }
+}
+
+.plone-navbar-toggle {
+  background-color: #eac02b;
 }
 
 #portal-footer-wrapper {
@@ -181,15 +193,18 @@ div.weather-title {
   color: #ffffff;
   margin-top: 5em;
 }
+
 .figures {
-    padding-top: 1em;
+  padding-top: 1em;
 }
+
 #priceandrequest {
-    padding: 1em;
-    text-align: center;
-    display: -ms-flexbox;
-    display: flex;
+  padding: 1em;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
 }
+
 #priceandrequest button {
   color: #fff;
   background-color: #dd693c;
@@ -197,7 +212,17 @@ div.weather-title {
   padding: 12px 24px;
 }
 
-
 .dslocations-homepage {
-  min-height: 28em;
+  min-height: 35em;
+}
+@media (min-width: 576px) {
+  .dslocations-homepage {
+    min-height: 25em;
+  }
+}
+
+body {
+  font-family: omnes-pro;
+  font-size: 16px;
+  word-wrap: normal;
 }
